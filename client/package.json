@@ -4,14 +4,16 @@
 	"private": true,
 	"proxy": "http://localhost:5000",
 	"dependencies": {
+		"bootstrap": "^4.3.1",
+		"jwt-decode": "^2.2.0",
 		"react": "^16.9.0",
+		"react-animate-height": "^2.0.15",
+		"react-bootstrap": "^1.0.0-beta.12",
 		"react-dom": "^16.9.0",
+		"react-redux": "^7.1.0",
 		"react-router-dom": "^5.0.1",
 		"react-scripts": "3.1.1",
-		"react-animate-height": "^2.0.15",
-		"jwt-decode": "^2.2.0",
 		"redux": "^4.0.4",
-		"react-redux": "^7.1.0",
 		"redux-thunk": "^2.3.0"
 	},
 	"scripts": {
