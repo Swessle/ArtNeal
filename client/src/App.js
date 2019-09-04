@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Carousel } from 'react-bootstrap';
 import Home from "./components/Home";
+import About from "./components/About";
+
 
 class App extends Component {
   state = {
@@ -13,7 +15,7 @@ class App extends Component {
           <Home/>
         </Carousel.Item>
         <Carousel.Item>
-          Hello
+          <About/>
         </Carousel.Item>
       </Carousel>
     );

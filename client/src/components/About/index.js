@@ -1,10 +1,19 @@
 import React from 'react'
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab'
+import AboutTab from '../AboutTab'
+import LocationTab from '../LocationTab'
 
 const About = () => {
     return (
-        <div>
-            <p>test</p>
-        </div>
+        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+            <Tab eventKey="about" title="About">
+                <AboutTab/>
+            </Tab>
+            <Tab eventKey="location" title="Location">
+                <LocationTab/>
+            </Tab>
+        </Tabs>
     )
 
 
