@@ -6,7 +6,7 @@ import LocationTab from '../LocationTab'
 
 const About = () => {
     return (
-        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+        <Tabs defaultActiveKey="about" id="uncontrolled-tab-example">
             <Tab eventKey="about" title="About">
                 <AboutTab/>
             </Tab>
