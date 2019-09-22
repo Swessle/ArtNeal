@@ -1,0 +1,12 @@
+p{
+    display: inline;
+}
+
+.about-img{
+    float: left;
+    margin: 15px;
+}
+
+.about-container{
+    margin-top: 30px;
+}
