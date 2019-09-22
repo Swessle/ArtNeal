@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Carousel } from 'react-bootstrap';
+import Fade from 'react-bootstrap/Fade'
 import Home from "./components/Home";
 
 class App extends Component {
@@ -8,14 +8,11 @@ class App extends Component {
   }
   render() {
     return (
-      <Carousel controls={false} touch={false} slide={false} fade={true}>
-        <Carousel.Item>
+      <div>
+        <Fade mountOnEnter={true} unmountOnEnter={true} appear={true} in={this.state.index === 0 ? true : false}>
           <Home/>
-        </Carousel.Item>
-        <Carousel.Item>
-          Hello
-        </Carousel.Item>
-      </Carousel>
+        </Fade>
+      </div>
     );
   }
 }
