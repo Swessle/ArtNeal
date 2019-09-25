@@ -10,3 +10,14 @@ export const setGallery = () => {
 	};
 };
 
+export const setAbout = () => {
+	return {
+		type: "ABOUT"
+	}
+}
+
+export const setContact = () => {
+	return {
+		type: "CONTACT"
+	}
+}
