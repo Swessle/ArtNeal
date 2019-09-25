@@ -22,8 +22,8 @@ class Pages extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = state => ({
   slide: state.index
-}
+})
 
 export default connect(mapStateToProps)(Pages);
