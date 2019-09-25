@@ -16,3 +16,8 @@ export const setAbout = () => {
 	}
 }
 
+export const setContact = () => {
+	return {
+		type: "CONTACT"
+	}
+}

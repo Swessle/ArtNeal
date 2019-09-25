@@ -1,4 +1,4 @@
-import { FIRST, SECOND, THIRD } from "../actions/types";
+import { HOME, GALLERY, CONTACT, ABOUT } from "../actions/types";
 
 const initialState = {
 	index: 0
@@ -6,15 +6,19 @@ const initialState = {
 
 export default function(state = initialState, action) {
 	switch (action.type) {
-		case FIRST:
+		case HOME:
+			return {
+				index: 0
+			};
+		case GALLERY:
 			return {
 				index: 1
 			};
-		case SECOND:
+		case ABOUT:
 			return {
 				index: 2
-			};
-		case THIRD:
+            };
+        case CONTACT:
 			return {
 				index: 3
 			};
