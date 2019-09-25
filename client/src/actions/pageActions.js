@@ -10,3 +10,9 @@ export const setGallery = () => {
 	};
 };
 
+export const setAbout = () => {
+	return {
+		type: "ABOUT"
+	}
+}
+
