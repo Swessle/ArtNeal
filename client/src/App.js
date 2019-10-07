@@ -4,7 +4,7 @@ import Pages from "./pages/Pages";
 import { Provider } from "react-redux";
 import store from "./store";
 import Navigation from './components/Navbar'
-
+import About from './components/About'
 class App extends Component {
 	render() {
 		return (
@@ -12,7 +12,7 @@ class App extends Component {
 				<Navigation/>
 					<Router>
 						<Switch>
-							<Route exact path="/" component={Pages} />
+							<Route exact path="/" component={About} />
 						</Switch>
 					</Router>
 			</Provider>
