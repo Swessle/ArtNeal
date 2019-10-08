@@ -18,9 +18,9 @@ class Navigation extends Component {
 			case 0:
 				return this.props.setHome();
 			case 1:
-				return this.props.setGallery();
-			case 2:
 				return this.props.setAbout();
+			case 2:
+				return this.props.setGallery();
 			case 3:
 				return this.props.setContact();
 			default:
@@ -33,6 +33,7 @@ class Navigation extends Component {
 				<Navbar.Brand>Art Neal</Navbar.Brand>
 				<Nav
 					onSelect={selectedKey => this.onChange(selectedKey)}
+					activeKey={this.props.slide.index}
 					className="mr-auto"
 				>
 					<Nav.Link eventKey="0">Home</Nav.Link>

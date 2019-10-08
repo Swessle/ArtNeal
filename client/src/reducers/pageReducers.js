@@ -1,24 +1,25 @@
-import { HOME, GALLERY, CONTACT, ABOUT } from "../actions/types";
+
+import history from "../history";
 
 const initialState = {
 	index: 0
 };
 
 export default function(state = initialState, action) {
-	switch (action.type) {
-		case HOME:
+	switch (history.location.pathname) {
+		case "/":
 			return {
 				index: 0
 			};
-		case GALLERY:
+		case "/about":
 			return {
 				index: 1
 			};
-		case ABOUT:
+		case "/gallery":
 			return {
 				index: 2
-            };
-        case CONTACT:
+			};
+		case "/contact":
 			return {
 				index: 3
 			};
