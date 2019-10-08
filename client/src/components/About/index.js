@@ -1,8 +1,8 @@
 import React from 'react'
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
-import AboutTab from '../AboutTab'
-import LocationTab from '../LocationTab'
+import AboutTab from './AboutTab'
+import LocationTab from './LocationTab'
 
 const About = () => {
     return (
