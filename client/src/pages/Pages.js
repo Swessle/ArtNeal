@@ -7,20 +7,11 @@ import Gallery from "../components/Gallery";
 import { connect } from "react-redux";
 
 class Pages extends Component {
-	state = {
-		home: true,
-		about: false
-	};
 	componentDidMount() {
 		console.log(this.props.slide.index);
 	}
 	componentDidUpdate() {
 		console.log(this.props);
-	}
-	setHome() {
-		setTimeout(() => {
-			this.setState({});
-		});
 	}
 	render() {
 		return (
@@ -57,29 +48,6 @@ class Pages extends Component {
 						<Gallery />
 					</div>
 				</Collapse>
-
-				{/* {this.props.slide.index === 0 ? (
-					<Fade
-						in={true}
-						mountOnEnter={true}
-						unmountOnExit={true}
-					>
-						<Home />
-					</Fade>
-				) : (
-					<Fade in={false} mountOnEnter={true} unmountOnExit={true}>
-						<Home />
-					</Fade>
-				)}
-				{this.props.slide.index === 1 ? (
-					<Fade in={true} mountOnEnter={true} unmountOnExit={true}>
-						<About />
-					</Fade>
-				) : (
-					<Fade in={false} mountOnEnter={true} unmountOnExit={true}>
-						<About />
-					</Fade>
-				)} */}
 			</div>
 		);
 	}
