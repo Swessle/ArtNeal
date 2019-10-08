@@ -9,7 +9,6 @@ class Navigation extends Component {
         console.log(this.props);
     }
     onChange = (value) => {
-        console.log(this.props);
         switch (parseInt(value)) {
             case 0:
                 return this.props.setHome()

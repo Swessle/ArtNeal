@@ -3,13 +3,11 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Pages from "./pages/Pages";
 import { Provider } from "react-redux";
 import store from "./store";
-import Navigation from './components/Navbar'
 
 class App extends Component {
 	render() {
 		return (
 			<Provider store={store}>
-				<Navigation/>
 					<Router>
 						<Switch>
 							<Route exact path="/" component={Pages} />
