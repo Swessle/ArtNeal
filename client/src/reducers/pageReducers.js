@@ -10,15 +10,15 @@ export default function(state = initialState, action) {
 			return {
 				index: 0
 			};
-		case GALLERY:
+		case ABOUT:
 			return {
 				index: 1
 			};
-		case ABOUT:
+		case GALLERY:
 			return {
 				index: 2
-            };
-        case CONTACT:
+			};
+		case CONTACT:
 			return {
 				index: 3
 			};

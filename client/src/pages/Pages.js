@@ -17,6 +17,8 @@ class Pages extends Component {
 		return (
 			<div>
 				<Navigation />
+
+				{/* Home component */}
 				<Collapse
 					in={this.props.slide.index === 0 ? true : false}
 					mountOnEnter={true}
@@ -28,6 +30,7 @@ class Pages extends Component {
 					</div>
 				</Collapse>
 
+				{/* About component */}
 				<Collapse
 					in={this.props.slide.index === 1 ? true : false}
 					mountOnEnter={true}
@@ -38,6 +41,8 @@ class Pages extends Component {
 						<About />
 					</div>
 				</Collapse>
+
+				{/* Gallery component */}
 				<Collapse
 					in={this.props.slide.index === 2 ? true : false}
 					mountOnEnter={true}

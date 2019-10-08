@@ -18,9 +18,9 @@ class Navigation extends Component {
 			case 0:
 				return this.props.setHome();
 			case 1:
-				return this.props.setGallery();
-			case 2:
 				return this.props.setAbout();
+			case 2:
+				return this.props.setGallery();
 			case 3:
 				return this.props.setContact();
 			default:
