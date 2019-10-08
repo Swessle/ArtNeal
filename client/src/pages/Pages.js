@@ -5,8 +5,6 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Gallery from "../components/Gallery";
 import { connect } from "react-redux";
-import Transition from "react-transition-group/Transition";
-import { Animated } from "react-animated-css";
 
 class Pages extends Component {
 	state = {
