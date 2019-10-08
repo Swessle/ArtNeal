@@ -1,4 +1,5 @@
 export const setHome = () => {
+	console.log("hello");
 	return {
 		type: "HOME"
 	};
