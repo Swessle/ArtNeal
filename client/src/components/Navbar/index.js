@@ -33,6 +33,7 @@ class Navigation extends Component {
 				<Navbar.Brand>Art Neal</Navbar.Brand>
 				<Nav
 					onSelect={selectedKey => this.onChange(selectedKey)}
+					activeKey={this.props.slide.index}
 					className="mr-auto"
 				>
 					<Nav.Link eventKey="0">Home</Nav.Link>

@@ -1,7 +1,6 @@
 import history from "../history";
 
 export const setHome = () => {
-	console.log("hello");
 	history.push("/");
 	return {
 		type: "HOME"
