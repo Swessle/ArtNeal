@@ -1,8 +1,5 @@
-import React,{Component} from "react";
-import { Carousel } from 'react-bootstrap';
-
-
-
+import React, { Component } from "react";
+import { Carousel } from "react-bootstrap";
 
 class Home extends Component {
 	constructor(props, context) {
@@ -12,14 +9,14 @@ class Home extends Component {
 
 		this.state = {
 			index: 0,
-			direction: null,
+			direction: null
 		};
 	}
 
 	handleSelect(selectedIndex, e) {
 		this.setState({
 			index: selectedIndex,
-			direction: e.direction,
+			direction: e.direction
 		});
 	}
 
@@ -29,7 +26,13 @@ class Home extends Component {
 		return (
 			<Carousel
 				activeIndex={index}
-				direction={direction}
+				interval={1000}
+				touch={false}
+				fade={true}
+				indicators={false}
+				keyboard={false}
+				pauseOnHover={false}
+				controls={false}
 				onSelect={this.handleSelect}
 			>
 				<Carousel.Item>
@@ -40,7 +43,10 @@ class Home extends Component {
 					/>
 					<Carousel.Caption>
 						<h3>First slide label</h3>
-						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+						<p>
+							Nulla vitae elit libero, a pharetra augue mollis
+							interdum.
+						</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
@@ -52,7 +58,10 @@ class Home extends Component {
 
 					<Carousel.Caption>
 						<h3>Second slide label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit.
+						</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
@@ -65,8 +74,9 @@ class Home extends Component {
 					<Carousel.Caption>
 						<h3>Third slide label</h3>
 						<p>
-							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
+							Praesent commodo cursus magna, vel scelerisque nisl
+							consectetur.
+						</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
@@ -74,4 +84,4 @@ class Home extends Component {
 	}
 }
 
-export default Home
+export default Home;
