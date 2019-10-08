@@ -1,13 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from 'react-bootstrap'
-import './index.css'
+import '../../pages/index.css'
+import Image from '../../pages/assets/images/Neal.JPG'
 
 const AboutTab = () => {
     return (
         <Container className="about-container">
             <Row>
                 <Col>
-                    <img src="https://via.placeholder.com/250x350" className="pull-left about-img" />
+                    <img src={Image} className="pull-left about-img" />
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis magna etiam tempor orci eu. Aliquam nulla facilisi cras fermentum odio. Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Integer quis auctor elit sed. Venenatis urna cursus eget nunc scelerisque. Ac feugiat sed lectus vestibulum mattis. Ac odio tempor orci dapibus. Augue mauris augue neque gravida in fermentum. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Curabitur gravida arcu ac tortor dignissim. Tempus quam pellentesque nec nam. Diam quam nulla porttitor massa id neque. Leo in vitae turpis massa sed elementum tempus. Adipiscing elit pellentesque habitant morbi tristique senectus et netus.</p>
                     <br></br>
                     <br></br>
