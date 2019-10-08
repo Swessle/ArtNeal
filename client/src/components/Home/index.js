@@ -26,7 +26,13 @@ class Home extends Component {
 		return (
 			<Carousel
 				activeIndex={index}
-				direction={direction}
+				interval={1000}
+				touch={false}
+				fade={true}
+				indicators={false}
+				keyboard={false}
+				pauseOnHover={false}
+				controls={false}
 				onSelect={this.handleSelect}
 			>
 				<Carousel.Item>
