@@ -15,8 +15,6 @@ class Navigation extends Component {
 	}
 	onChange = value => {
 		switch (parseInt(value)) {
-			case 0:
-				return this.props.setHome();
 			case 1:
 				return this.props.setAbout();
 			case 2:
@@ -24,7 +22,7 @@ class Navigation extends Component {
 			case 3:
 				return this.props.setContact();
 			default:
-				return null;
+				return this.props.setHome();
 		}
 	};
 	render() {
@@ -36,7 +34,6 @@ class Navigation extends Component {
 					activeKey={this.props.slide.index}
 					className="mr-auto"
 				>
-					<Nav.Link eventKey="0">Home</Nav.Link>
 					<Nav.Link eventKey="1">About</Nav.Link>
 					<Nav.Link eventKey="2">Gallery</Nav.Link>
 					<Nav.Link eventKey="3">Contact</Nav.Link>
