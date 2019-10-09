@@ -8,18 +8,22 @@ import {
 	setAbout,
 	setContact
 } from "../../actions/pageActions";
+import { withRouter } from "react-router-dom";
 
 class Navigation extends Component {
 	componentDidMount() {
 		console.log(this.props);
 	}
 	onChange = value => {
-		switch (parseInt(value)) {
-			case 1:
+		switch (value) {
+			case "/about":
+				this.props.history.push("/about");
 				return this.props.setAbout();
-			case 2:
+			case "/gallery":
+				this.props.history.push("/gallery");
 				return this.props.setGallery();
-			case 3:
+			case "/contact":
+				this.props.history.push("/contact");
 				return this.props.setContact();
 			default:
 				return this.props.setHome();
@@ -31,12 +35,12 @@ class Navigation extends Component {
 				<Navbar.Brand>Art Neal</Navbar.Brand>
 				<Nav
 					onSelect={selectedKey => this.onChange(selectedKey)}
-					activeKey={this.props.slide.index}
+					activeKey={this.props.history.location.pathname}
 					className="mr-auto"
 				>
-					<Nav.Link eventKey="1">About</Nav.Link>
-					<Nav.Link eventKey="2">Gallery</Nav.Link>
-					<Nav.Link eventKey="3">Contact</Nav.Link>
+					<Nav.Link eventKey="/about">About</Nav.Link>
+					<Nav.Link eventKey="/gallery">Gallery</Nav.Link>
+					<Nav.Link eventKey="/contact">Contact</Nav.Link>
 				</Nav>
 			</Navbar>
 		);
@@ -47,7 +51,9 @@ const mapStateToProps = state => ({
 	slide: state.slide
 });
 
-export default connect(
-	mapStateToProps,
-	{ setHome, setAbout, setGallery, setContact }
-)(Navigation);
+export default withRouter(
+	connect(
+		mapStateToProps,
+		{ setHome, setAbout, setGallery, setContact }
+	)(Navigation)
+);
