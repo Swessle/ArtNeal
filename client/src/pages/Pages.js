@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 import Collapse from "react-bootstrap/Collapse";
 import Navigation from "../components/Navbar";
 import Home from "../components/Home";
 import About from "../components/About";
 import Gallery from "../components/Gallery";
 import { connect } from "react-redux";
-import history from "../history";
+import { history } from "../store";
 
 class Pages extends Component {
 	componentDidMount() {
@@ -21,7 +22,7 @@ class Pages extends Component {
 
 				{/* Home component */}
 				<Collapse
-					in={this.props.slide.index === 0 ? true : false}
+					in={this.props.location.pathname === "/" ? true : false}
 					mountOnEnter={true}
 					unmountOnExit={true}
 					timeout={1000}
@@ -33,7 +34,9 @@ class Pages extends Component {
 
 				{/* About component */}
 				<Collapse
-					in={this.props.slide.index === 1 ? true : false}
+					in={
+						this.props.location.pathname === "/about" ? true : false
+					}
 					mountOnEnter={true}
 					unmountOnExit={true}
 					timeout={1000}
@@ -45,7 +48,11 @@ class Pages extends Component {
 
 				{/* Gallery component */}
 				<Collapse
-					in={this.props.slide.index === 2 ? true : false}
+					in={
+						this.props.location.pathname === "/gallery"
+							? true
+							: false
+					}
 					mountOnEnter={true}
 					unmountOnExit={true}
 					timeout={1000}
@@ -63,4 +70,4 @@ const mapStateToProps = state => ({
 	slide: state.slide
 });
 
-export default connect(mapStateToProps)(Pages);
+export default withRouter(connect(mapStateToProps)(Pages));
