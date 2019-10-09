@@ -1,26 +1,20 @@
 /* ABOUT ME */
-
-
-
-
-
-
-
-
-p{
-    display: inline;
+#aboutContainer {
+    padding-top: 180px;
 }
 
-.about-img{
+#nealImage {
     float: left;
-    margin: 15px;
+    margin: 25px;
+    max-width: 450px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.6);
 }
 
-.about-container{
-    margin-top: 30px;
+#aboutText {
+    font-size: 22px;
 }
 
-.google-map{
-    margin: 30px;
-
+#locationImage {
+    
 }
