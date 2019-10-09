@@ -1,4 +1,4 @@
 export const HOME = "HOME";
-export const GALLERY = "GALLERY";
 export const ABOUT = "ABOUT";
+export const GALLERY = "GALLERY";
 export const CONTACT = "CONTACT";
