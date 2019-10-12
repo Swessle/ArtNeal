@@ -13,9 +13,6 @@ class App extends Component {
 				<Router history={history}>
 					<Switch>
 						<Route path="/" component={Pages} />
-						<Route path="/about" component={Pages} />
-						<Route path="/gallery" component={Pages} />
-						<Route path="/contact" component={Pages} />
 					</Switch>
 				</Router>
 			</Provider>
