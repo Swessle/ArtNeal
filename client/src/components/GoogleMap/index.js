@@ -5,8 +5,10 @@ import './style.css'
 const mapStyles = {
   width: '100%',
   height: '500px',
-  alignSelf: 'center'
+  alignSelf: 'center',
+  marginBottom: '20px'
 };
+
 
 export class MapContainer extends Component {
   render() {
@@ -32,5 +34,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: process.env.GOOGLE_ID
+  apiKey: process.env.REACT_APP_GOOGLE_ID
 })(MapContainer);
