@@ -1,4 +1,3 @@
-import history from "../store";
 
 export const setHome = () => {
 	return {
