@@ -80,10 +80,8 @@ img {
 	justify-content: center;
 }
 
-.hello {
-	z-index: 10000;
-	position: absolute;
-	justify-content: center;
+.carousel {
+    position: fixed !important;
 }
 
 .nav-link:hover {
