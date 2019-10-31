@@ -38,8 +38,8 @@ class Navigation extends Component {
 					activeKey={this.props.history.location.pathname}
 					className="mr-auto"
 				>
-					<Nav.Link eventKey="/about">About</Nav.Link>
 					<Nav.Link eventKey="/gallery">Gallery</Nav.Link>
+					<Nav.Link eventKey="/about">About</Nav.Link>
 					<Nav.Link eventKey="/contact">Contact</Nav.Link>
 				</Nav>
 			</Navbar>
