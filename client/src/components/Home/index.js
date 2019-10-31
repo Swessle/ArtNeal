@@ -38,7 +38,7 @@ class Home extends Component {
 				<Carousel.Item>
 					<img
 						className="d-block w-100"
-						src="https://images.pexels.com/photos/2222452/pexels-photo-2222452.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500text=First slide&bg=373940"
+						src="https://picsum.photos/800/400?text=Fourth slide&bg=282c34"
 						alt="First slide"
 					/>
 					<Carousel.Caption>
