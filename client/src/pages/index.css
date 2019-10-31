@@ -67,6 +67,10 @@ img.d-block {
     transform: scale(3, 3);
 }
 
+img {
+    pointer-events: none;
+}
+
 .navbar {
 	position: absolute;
 	z-index: 100;
