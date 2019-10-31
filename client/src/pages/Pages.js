@@ -7,6 +7,7 @@ import About from "../components/About";
 import Gallery from "../components/Gallery";
 import { connect } from "react-redux";
 import { history } from "../store";
+import "./index.css"
 
 class Pages extends Component {
 	componentDidMount() {
