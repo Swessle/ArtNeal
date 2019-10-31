@@ -7,8 +7,8 @@
 	float: left;
 	margin: 25px;
 	width: 80vw;
-    max-width: 40vh;
-    height: auto;
+	max-width: 40vh;
+	height: auto;
 	border: 2px solid black;
 	box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.6);
 }
@@ -56,16 +56,33 @@ a:hover {
 	height: 94.25vh;
 } */
 
+div.active img.d-block{
+    transform: scale(1, 1);
+}
+
 img.d-block {
 	object-fit: cover;
 	height: 100vh;
+    transition: 3s;
+    transform: scale(3, 3);
 }
 
 .navbar {
-    position: absolute;
-    z-index: 100;
-    color: white;
-    background-color: #0000005c !important;
-    border-radius: 0px 0px 10px 0px;
-    justify-content: center;
+	position: absolute;
+	z-index: 100;
+	color: white;
+	background-color: #00000099 !important;
+	border-radius: 0px 0px 10px 0px;
+	justify-content: center;
+}
+
+.hello {
+	z-index: 10000;
+	position: absolute;
+	justify-content: center;
+}
+
+.nav-link:hover {
+	color: white !important;
+	opacity: 1 !important;
 }
