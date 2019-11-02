@@ -80,12 +80,6 @@ img {
 	justify-content: center;
 }
 
-.hello {
-	z-index: 10000;
-	position: absolute;
-	justify-content: center;
-}
-
 .nav-link:hover {
 	color: white !important;
 	opacity: 1 !important;
