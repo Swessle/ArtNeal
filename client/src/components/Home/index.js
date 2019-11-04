@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
+import { connect } from "react-redux";
+import { setAbout } from "../../actions/pageActions";
+import { withRouter } from "react-router-dom";
+import firstImage from "../../pages/assets/images/IMG_2624.jpg";
+import secondImage from "../../pages/assets/images/IMG_2634.jpg";
+import thirdImage from "../../pages/assets/images/IMG_2650.jpg";
 
 class Home extends Component {
 	constructor(props, context) {
@@ -20,68 +26,73 @@ class Home extends Component {
 		});
 	}
 
+	onChangeAbout = () => {
+		this.props.history.push("/gallery");
+	};
+
 	render() {
 		const { index, direction } = this.state;
-
+		const LandingButton = () => {
+			return <button onClick={this.onChangeAbout}>View Gallery</button>;
+		};
 		return (
-			<Carousel
-				activeIndex={index}
-				interval={1000}
-				touch={false}
-				fade={true}
-				indicators={false}
-				keyboard={false}
-				pauseOnHover={false}
-				controls={false}
-				onSelect={this.handleSelect}
-			>
-				<Carousel.Item>
-					<img
-						className="d-block w-100"
-						src="https://images.pexels.com/photos/2222452/pexels-photo-2222452.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500text=First slide&bg=373940"
-						alt="First slide"
-					/>
-					<Carousel.Caption>
-						<h3>First slide label</h3>
-						<p>
-							Nulla vitae elit libero, a pharetra augue mollis
-							interdum.
-						</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-				<Carousel.Item>
-					<img
-						className="d-block w-100"
-						src="https://picsum.photos/800/400?text=Second slide&bg=282c34"
-						alt="Third slide"
-					/>
+			<>
+				<Carousel
+					activeIndex={index}
+					interval={4000}
+					touch={false}
+					fade={true}
+					indicators={false}
+					keyboard={false}
+					pauseOnHover={false}
+					controls={false}
+					onSelect={this.handleSelect}
+				>
+					<Carousel.Item>
+						<img
+							className="d-block w-100"
+							src={firstImage}
+							alt="First slide"
+						/>
+						<Carousel.Caption>
+							<LandingButton />
+						</Carousel.Caption>
+					</Carousel.Item>
+					<Carousel.Item>
+						<img
+							className="d-block w-100"
+							src={secondImage}
+							alt="Third slide"
+						/>
 
-					<Carousel.Caption>
-						<h3>Second slide label</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit.
-						</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-				<Carousel.Item>
-					<img
-						className="d-block w-100"
-						src="https://picsum.photos/800/400?text=Third slide&bg=20232a"
-						alt="Third slide"
-					/>
+						<Carousel.Caption>
+							<LandingButton />
+						</Carousel.Caption>
+					</Carousel.Item>
+					<Carousel.Item>
+						<img
+							className="d-block w-100"
+							src={thirdImage}
+							alt="Third slide"
+						/>
 
-					<Carousel.Caption>
-						<h3>Third slide label</h3>
-						<p>
-							Praesent commodo cursus magna, vel scelerisque nisl
-							consectetur.
-						</p>
-					</Carousel.Caption>
-				</Carousel.Item>
-			</Carousel>
+						<Carousel.Caption>
+							<LandingButton />
+						</Carousel.Caption>
+					</Carousel.Item>
+				</Carousel>
+			</>
 		);
 	}
 }
 
-export default Home;
+const mapStateToProps = state => ({
+	slide: state.slide
+});
+
+export default withRouter(
+	connect(
+		mapStateToProps,
+		{ setAbout }
+	)(Home)
+);
