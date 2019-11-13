@@ -8,26 +8,30 @@ import galleryPics from '../../Gallery.json'
 
 const Gallery = () => {
 
-	const [pics, setPics] = React.useState(galleryPics);
-	const [filteredPics, setfilteredPics] = React.useState(null)
+	const [pics, setPics] = useState(galleryPics);
+	const [filteredPics, setfilteredPics] = useState(null)
 
 	
-	var jazz = pics.filter(e => e.category === "Jazz")
-	var nude = pics.filter(e => e.category === "Nude")
+	var jazz = pics.filter((e) => e.category === "Jazz")
+	var nude = pics.filter((e)=> e.category === "Nude")
 	  
 	useEffect(()=>{
 		setfilteredPics(pics)
-	})
+	}, [])
 	
 
 	const handleClickAll = () =>{
+		
 		setfilteredPics(pics)
 		
 	}
 	const handleClickJazz = () =>{
+		
 		setfilteredPics(jazz)
+		console.log(jazz)
 	}
 	const handleClickNude = () =>{
+		
 		setfilteredPics(nude)
 	}
 
@@ -40,22 +44,17 @@ const Gallery = () => {
 						<div className="gallfilter text-center">
 							<ul className="list">
 								<li>
-									<a className="active" href="#" data-filter="">
-										<Button onClick={()=>handleClickAll}>All</Button>
-								</a>
-									<a className="active" href="#" data-filter="">
-										<Button onClick={()=>handleClickNude}>Nude</Button>
-								</a>
-									<a className="active" href="#" data-filter="">
-										<Button onClick={()=>handleClickJazz}>Jazz</Button>
-								</a>
+										<Button onClick={handleClickAll}>All</Button>
+	
+										<Button onClick={handleClickNude}>Nude</Button>
+								
+										<Button onClick={handleClickJazz}>Jazz</Button>
 								</li>
 							</ul>
 						</div>
 					</Col>
 				</Row>
 				<Row>
-
 					{filteredPics && filteredPics.map((pic) =>(
 						<GalleryCard
 						image={pic.image}
