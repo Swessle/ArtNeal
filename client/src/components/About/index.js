@@ -5,6 +5,7 @@ import Image from "../../pages/assets/images/Neal.JPG";
 
 import GoogleMap from "../GoogleMap";
 
+
 const About = () => {
 	return (
 		<Container id="aboutContainer">

@@ -10,6 +10,8 @@ import {
 } from "../../actions/pageActions";
 import { withRouter } from "react-router-dom";
 
+
+
 class Navigation extends Component {
 	componentDidMount() {
 		console.log(this.props);
@@ -40,7 +42,7 @@ class Navigation extends Component {
 				>
 					<Nav.Link eventKey="/gallery">Gallery</Nav.Link>
 					<Nav.Link eventKey="/about">About</Nav.Link>
-					<Nav.Link eventKey="/contact">Contact</Nav.Link>
+					<Nav.Link href={`mailto:loganwbertrand@gmail.com`} target="_blank">Contact</Nav.Link>
 				</Nav>
 			</Navbar>
 		);

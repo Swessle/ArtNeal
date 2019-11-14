@@ -7,6 +7,7 @@ const mapStyles = {
 	alignSelf: "center"
 };
 
+
 export class MapContainer extends Component {
 	render() {
 		return (
