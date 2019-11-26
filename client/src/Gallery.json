@@ -1,27 +1,105 @@
 [
     {
       "id": 1,
-      "name": "SpongeBob",
-      "image": "/assets/images/4Jazz.jpg",
-      "category":"Jazz"
+      "name": "Bird in Flight",
+      "image": "/assets/images/birdFlight.jpg",
+      "category":"Life"
     },
     {
       "id": 2,
-      "name": "Mr. Krabs",
-      "image": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
-      "category":"Nude"
+      "name": "Bridge at Night",
+      "image": "/assets/images/bridge.jpg",
+      "category":"Life"
     },
     {
       "id": 3,
-      "name": "Squidward",
-      "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
-      "category":"Nude"
+      "name": "Guitar Portrait",
+      "image": "/assets/images/guitarPortrait.jpg",
+      "category":"Portrait"
     },
     {
       "id": 4,
-      "name": "Dexter",
-      "image": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
+      "name": "Old Town Road",
+      "image": "/assets/images/horseRoad.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 5,
+      "name": "2 Women",
+      "image": "/assets/images/womenPortrait.jpg",
+      "category":"Portrait"
+    },
+    {
+      "id": 6,
+      "name": "4 Jazz",
+      "image": "/assets/images/jazzPortrait1.jpg",
       "category":"Jazz"
+    },
+    {
+      "id": 7,
+      "name": "2 Men and Their Instrument",
+      "image": "/assets/images/2menInstrument.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 8,
+      "name": "2 Jazz Men",
+      "image": "/assets/images/2menPortraitBass.jpg",
+      "category":"Jazz"
+    },
+    {
+      "id": 9,
+      "name": "Painted Doll House",
+      "image": "/assets/images/3Dhouse.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 10,
+      "name": "The Abstract",
+      "image": "/assets/images/abstract.jpg",
+      "category":"Abstract"
+    },
+    {
+      "id": 11,
+      "name": "Mini House",
+      "image": "/assets/images/3DmodelHouse.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 12,
+      "name": "Nude Abstract",
+      "image": "/assets/images/abstractNude.jpg",
+      "category":"Abstract"
+    },
+    {
+      "id": 13,
+      "name": "Abstract Water",
+      "image": "/assets/images/abstractWater.jpg",
+      "category":"Abstract"
+    },
+    {
+      "id": 14,
+      "name": "Beach Jetti",
+      "image": "/assets/images/beachJetti.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 15,
+      "name": "Abstract Water II",
+      "image": "/assets/images/abstractWater2.jpg",
+      "category":"Abstract"
+    },
+    {
+      "id": 16,
+      "name": "The Beach",
+      "image": "/assets/images/beachPortrait.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 17,
+      "name": "Waterfront Cabinet",
+      "image": "/assets/images/cabinetWaterfront.jpg",
+      "category":"Nautical"
     }
 
 ]
