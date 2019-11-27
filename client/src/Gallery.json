@@ -100,6 +100,241 @@
       "name": "Waterfront Cabinet",
       "image": "/assets/images/cabinetWaterfront.jpg",
       "category":"Nautical"
+    },
+    {
+      "id": 18,
+      "name": "Cafe",
+      "image": "/assets/images/cafe.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 19,
+      "name": "Waterfront Cabinet II",
+      "image": "/assets/images/cabinetWaterfront5.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 20,
+      "name": "City Life",
+      "image": "/assets/images/cityLife.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 21,
+      "name": "Cloud Portrait",
+      "image": "/assets/images/cloudPortrait.jpg",
+      "category":"Portrait"
+    },
+    {
+      "id": 22,
+      "name": "Verdant Boat",
+      "image": "/assets/images/greenBoat.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 23,
+      "name": "Highway",
+      "image": "/assets/images/highway.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 24,
+      "name": "Waves of Horses",
+      "image": "/assets/images/horseWaves.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 25,
+      "name": "Guitarist Hands",
+      "image": "/assets/images/jazzCloseUp.jpg",
+      "category":"Jazz"
+    },
+    {
+      "id": 26,
+      "name": "Lifeguard Tower",
+      "image": "/assets/images/lifeguardTower.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 27,
+      "name": "Men and a Horse",
+      "image": "/assets/images/malePortraits.jpg",
+      "category":"Portrait"
+    },
+    {
+      "id": 28,
+      "name": "Minimalist Portrait",
+      "image": "/assets/images/minimalistPortrait.jpg",
+      "category":"Portrait"
+    },
+    {
+      "id": 29,
+      "name": "Mount Rushmore",
+      "image": "/assets/images/mtRushmore.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 30,
+      "name": "In Bed",
+      "image": "/assets/images/nude1.jpg",
+      "category":"Portrait"
+    },
+    {
+      "id": 31,
+      "name": "Nude Woman",
+      "image": "/assets/images/nudePortrait.jpg",
+      "category":"Portrait"
+    },
+    {
+      "id": 32,
+      "name": "2 Nude Women",
+      "image": "/assets/images/nudeWomen.jpg",
+      "category":"Portrait"
+    },
+    {
+      "id": 33,
+      "name": "Palm Tree",
+      "image": "/assets/images/palmTree.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 34,
+      "name": "Life in Paris",
+      "image": "/assets/images/parisStatue.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 35,
+      "name": "Plant Life",
+      "image": "/assets/images/plant.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 36,
+      "name": "Ancient Life",
+      "image": "/assets/images/portraitBird.jpg",
+      "category":"Portrait"
+    },
+    {
+      "id": 37,
+      "name": "Architecture",
+      "image": "/assets/images/sideBuilding2.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 38,
+      "name": "Sunset Waterfront",
+      "image": "/assets/images/sunsetBoat.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 39,
+      "name": "Sunset in Venice",
+      "image": "/assets/images/sunsetBoat2.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 40,
+      "name": "A Couple in Sunset",
+      "image": "/assets/images/sunsetCouple.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 41,
+      "name": "Sailboat Sunset",
+      "image": "/assets/images/sunsetWaterfront.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 42,
+      "name": "Abstract Waterfront",
+      "image": "/assets/images/triangleWaterfront.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 43,
+      "name": "Umbrellas",
+      "image": "/assets/images/umbrella.jpg",
+      "category":"Life"
+    },
+    {
+      "id": 44,
+      "name": "Jazz in Creation",
+      "image": "/assets/images/unfinishedJazz.jpeg",
+      "category":"Jazz"
+    },
+    {
+      "id": 45,
+      "name": "Waves",
+      "image": "/assets/images/water2.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 46,
+      "name": "The Waterfront",
+      "image": "/assets/images/waterfront.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 47,
+      "name": "Water rising",
+      "image": "/assets/images/waterPainting.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 48,
+      "name": "The Dock",
+      "image": "/assets/images/waterfrontDock.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 49,
+      "name": "Waves Crashing",
+      "image": "/assets/images/wavesCrashing.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 50,
+      "name": "A Look and a Sip",
+      "image": "/assets/images/whitePortrait.jpg",
+      "category":"Portrait"
+    },
+    {
+      "id": 51,
+      "name": "White Yacht",
+      "image": "/assets/images/whiteYacht.jpg",
+      "category":"Nautical"
+    },
+    {
+      "id": 52,
+      "name": "A Look Back",
+      "image": "/assets/images/womanPortrait.jpg",
+      "category":"Portrait"
+    },
+    {
+      "id": 53,
+      "name": "The Woman",
+      "image": "/assets/images/womanPortrait2.jpg",
+      "category":"Portrait"
+    },
+    {
+      "id": 54,
+      "name": "Woman in the Shadows",
+      "image": "/assets/images/womanPortrait3.jpg",
+      "category":"Portrait"
+    },
+    {
+      "id": 55,
+      "name": "Ancient Art",
+      "image": "/assets/images/womanPortrait4.jpg",
+      "category":"Portrait"
+    },
+    {
+      "id": 56,
+      "name": "Zebras",
+      "image": "/assets/images/zebraPortrait.jpg",
+      "category":"Life"
     }
+
 
 ]

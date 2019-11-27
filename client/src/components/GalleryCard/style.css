@@ -3,9 +3,9 @@
     border-radius: 2px;
     border: 5px solid white;
     padding:0;
-    height: 200px;
+    
     margin: 8px;
-    width: 150px;
+    
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     display: block;
   }
@@ -14,17 +14,15 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background:#6CADDC;
-    
   }
   .card > .img-container > img {
-    width: 70%;
+    width: 100%;
     height: 100%;
     justify-content: center;
     
   }
 
   img{
-    height: 200;
-    width: 200;
+    max-height: 500;
+    max-width: 700;
   }
