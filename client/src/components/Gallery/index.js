@@ -13,7 +13,10 @@ const Gallery = () => {
 
 	
 	var jazz = pics.filter((e) => e.category === "Jazz")
-	var nude = pics.filter((e)=> e.category === "Nude")
+	var portrait = pics.filter((e)=> e.category === "Portrait")
+	var abstract = pics.filter((e)=> e.category === "Abstract")
+	var water = pics.filter((e)=> e.category === "Nautical")
+	var life = pics.filter((e)=> e.category === "Life")
 	  
 	useEffect(()=>{
 		setfilteredPics(pics)
@@ -30,9 +33,24 @@ const Gallery = () => {
 		setfilteredPics(jazz)
 		console.log(jazz)
 	}
-	const handleClickNude = () =>{
+	const handleClickAbstract = () =>{
 		
-		setfilteredPics(nude)
+		setfilteredPics(abstract)
+	}
+
+	const handleClickWater = () =>{
+		
+		setfilteredPics(water)
+	}
+
+	const handleClickLife = () =>{
+		
+		setfilteredPics(life)
+	}
+
+	const handleClickPortrait = () =>{
+		
+		setfilteredPics(portrait)
 	}
 
 
@@ -46,15 +64,17 @@ const Gallery = () => {
 								<li>
 										<Button onClick={handleClickAll}>All</Button>
 	
-										<Button onClick={handleClickNude}>Nude</Button>
-								
+										<Button onClick={handleClickPortrait}>Portrait</Button>
+										<Button onClick={handleClickAbstract}>Abstract</Button>
+										<Button onClick={handleClickWater}>Water</Button>
+										<Button onClick={handleClickLife}>Life</Button>
 										<Button onClick={handleClickJazz}>Jazz</Button>
 								</li>
 							</ul>
 						</div>
 					</Col>
 				</Row>
-				<Row>
+				<Row className='shufflePics'>
 					{filteredPics && filteredPics.map((pic) =>(
 						<GalleryCard
 						image={pic.image}
