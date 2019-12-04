@@ -10,12 +10,6 @@ import { history } from "../store";
 import "./index.css";
 
 class Pages extends Component {
-	componentDidMount() {
-		console.log(history);
-	}
-	componentDidUpdate() {
-		console.log(this.props);
-	}
 	render() {
 		return (
 			<div>
