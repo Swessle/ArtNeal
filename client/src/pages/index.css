@@ -86,3 +86,16 @@ img {
 	color: white !important;
 	opacity: 1 !important;
 }
+
+@media (min-width: 992px) {
+	.modal-lg,
+	.modal-xl {
+		max-width: 90vw;
+	}
+}
+
+.modal-title {
+	flex: 1;
+	justify-content: center;
+	display: flex;
+}

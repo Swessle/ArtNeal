@@ -15,6 +15,7 @@ const About = () => {
 						src={Image}
 						className="pull-left about-img"
 						id="nealImage"
+						rel="preload"
 					/>
 					<p id="aboutText">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
