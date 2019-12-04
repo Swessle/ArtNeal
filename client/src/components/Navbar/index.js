@@ -11,8 +11,6 @@ import {
 import { withRouter } from "react-router-dom";
 import "./index.css"
 
-
-
 class Navigation extends Component {
 	componentDidMount() {
 		console.log(this.props);
@@ -35,7 +33,6 @@ class Navigation extends Component {
 	render() {
 		return (
 			<Navbar className="bg-transparent" variant="dark">
-				<Navbar.Brand>Art Neal</Navbar.Brand>
 				<Nav
 					onSelect={selectedKey => this.onChange(selectedKey)}
 					activeKey={this.props.history.location.pathname}
@@ -55,8 +52,7 @@ const mapStateToProps = state => ({
 });
 
 export default withRouter(
-	connect(
-		mapStateToProps,
-		{ setHome, setAbout, setGallery, setContact }
-	)(Navigation)
+	connect(mapStateToProps, { setHome, setAbout, setGallery, setContact })(
+		Navigation
+	)
 );

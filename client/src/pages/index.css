@@ -17,8 +17,6 @@
 	font-size: 22px;
 }
 
-
-
 .googleMap {
 	align-items: center;
 }
@@ -55,27 +53,32 @@ a:hover {
 	height: 94.25vh;
 } */
 
-div.active img.d-block{
-    transform: scale(1, 1);
+div.active img.d-block {
+	transform: scale(1, 1);
 }
 
 img.d-block {
 	object-fit: cover;
 	height: 100vh;
-    transition: 3s;
-    transform: scale(3, 3);
+	transition: 3s;
+	transform: scale(3, 3);
 }
 
 img {
-    pointer-events: none;
+	pointer-events: none;
 }
 
 .navbar {
 	position: absolute;
 	z-index: 100;
 	color: white;
-	background-color: #00000099 !important;
 	border-radius: 0px 0px 10px 0px;
+	justify-content: center;
+}
+
+.navbar-nav {
+	display: flex;
+	flex: 1;
 	justify-content: center;
 }
 
