@@ -36,6 +36,9 @@ class Home extends Component {
 		const LandingButton = () => {
 			return <button id="landingbtn" onClick={this.onChangeAbout}>View Gallery</button>;
 		};
+		const LandingText = () => {
+			return <h1 id="landingtext">Neal Lange</h1>
+		}
 		
 		return (
 			<>
@@ -57,10 +60,16 @@ class Home extends Component {
 							src={firstImage}
 							alt="First slide"
 						/>
-						<Carousel.Caption>
+						<Carousel.Caption id="textcaption">
+							<LandingText />
+						</Carousel.Caption>
+						
+						<Carousel.Caption id="btncaption">
 							<LandingButton />
 						</Carousel.Caption>
+					
 					</Carousel.Item>
+					
 					<Carousel.Item>
 						<img
 							className="d-block w-100"
@@ -69,10 +78,16 @@ class Home extends Component {
 							alt="Third slide"
 						/>
 
-						<Carousel.Caption>
+						<Carousel.Caption id="textcaption">
+							<LandingText />
+						</Carousel.Caption>
+						
+						<Carousel.Caption id="btncaption">
 							<LandingButton />
 						</Carousel.Caption>
+					
 					</Carousel.Item>
+					
 					<Carousel.Item>
 						<img
 							className="d-block w-100"
@@ -81,10 +96,16 @@ class Home extends Component {
 							alt="Third slide"
 						/>
 
-						<Carousel.Caption>
+						<Carousel.Caption id="textcaption">
+							<LandingText />
+						</Carousel.Caption>
+						
+						<Carousel.Caption id="btncaption">
 							<LandingButton />
 						</Carousel.Caption>
+					
 					</Carousel.Item>
+				
 				</Carousel>
 			</>
 		);
