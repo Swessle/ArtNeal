@@ -33,7 +33,6 @@ class Navigation extends Component {
 	render() {
 		return (
 			<Navbar className="bg-transparent" variant="dark">
-				<Navbar.Brand>Art Neal</Navbar.Brand>
 				<Nav
 					onSelect={selectedKey => this.onChange(selectedKey)}
 					activeKey={this.props.history.location.pathname}
