@@ -56,35 +56,48 @@ const Gallery = () => {
 
 	return (
 		<section className="gallerytabs">
-			<Container className='my-shuffle-container'>
+			<Container className="my-shuffle-container">
 				<Row>
 					<Col>
 						<div className="gallfilter text-center">
 							<ul className="list">
 								<li>
-										<Button onClick={handleClickAll}>All</Button>
-	
-										<Button onClick={handleClickPortrait}>Portrait</Button>
-										<Button onClick={handleClickAbstract}>Abstract</Button>
-										<Button onClick={handleClickWater}>Water</Button>
-										<Button onClick={handleClickLife}>Life</Button>
-										<Button onClick={handleClickJazz}>Jazz</Button>
+									<Button onClick={handleClickAll}>
+										All
+									</Button>
+
+									<Button onClick={handleClickPortrait}>
+										Portrait
+									</Button>
+									<Button onClick={handleClickAbstract}>
+										Abstract
+									</Button>
+									<Button onClick={handleClickWater}>
+										Water
+									</Button>
+									<Button onClick={handleClickLife}>
+										Life
+									</Button>
+									<Button onClick={handleClickJazz}>
+										Jazz
+									</Button>
 								</li>
 							</ul>
 						</div>
 					</Col>
 				</Row>
-				<Row className='shufflePics'>
-					{filteredPics && filteredPics.map((pic) =>(
-						<GalleryCard
-						image={pic.image}
-						category={pic.category}
-						/>
-					))}
+				<Row className="shufflePics justify-content-md-center">
+					{filteredPics &&
+						filteredPics.map(pic => (
+							<GalleryCard
+								image={pic.image}
+								category={pic.category}
+							/>
+						))}
 				</Row>
 			</Container>
 		</section>
-	)
+	);
 };
 
  
