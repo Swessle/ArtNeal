@@ -6,6 +6,7 @@ import { withRouter } from "react-router-dom";
 import firstImage from "../../pages/assets/images/IMG_2624.jpg";
 import secondImage from "../../pages/assets/images/IMG_2634.jpg";
 import thirdImage from "../../pages/assets/images/IMG_2650.jpg";
+import "./index.css"
 
 class Home extends Component {
 	constructor(props, context) {
@@ -33,8 +34,9 @@ class Home extends Component {
 	render() {
 		const { index, direction } = this.state;
 		const LandingButton = () => {
-			return <button onClick={this.onChangeAbout}>View Gallery</button>;
+			return <button id="landingbtn" onClick={this.onChangeAbout}>View Gallery</button>;
 		};
+		
 		return (
 			<>
 				<Carousel
@@ -51,6 +53,7 @@ class Home extends Component {
 					<Carousel.Item>
 						<img
 							className="d-block w-100"
+							id="landingimage"
 							src={firstImage}
 							alt="First slide"
 						/>
@@ -61,6 +64,7 @@ class Home extends Component {
 					<Carousel.Item>
 						<img
 							className="d-block w-100"
+							id="landingimage"
 							src={secondImage}
 							alt="Third slide"
 						/>
@@ -72,6 +76,7 @@ class Home extends Component {
 					<Carousel.Item>
 						<img
 							className="d-block w-100"
+							id="landingimage"
 							src={thirdImage}
 							alt="Third slide"
 						/>
