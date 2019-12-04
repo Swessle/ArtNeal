@@ -1,0 +1,18 @@
+#landingimage {
+    filter: brightness(30%);
+}
+
+#landingbtn {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    
+    letter-spacing: 6px;
+    border-bottom: 2px solid white;
+}
+
+h1 {
+    
+    
+}
