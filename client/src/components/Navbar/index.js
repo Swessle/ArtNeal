@@ -9,6 +9,7 @@ import {
 	setContact
 } from "../../actions/pageActions";
 import { withRouter } from "react-router-dom";
+import "./index.css"
 
 
 
@@ -33,16 +34,16 @@ class Navigation extends Component {
 	};
 	render() {
 		return (
-			<Navbar bg="dark" variant="dark">
+			<Navbar className="bg-transparent" variant="dark">
 				<Navbar.Brand>Art Neal</Navbar.Brand>
 				<Nav
 					onSelect={selectedKey => this.onChange(selectedKey)}
 					activeKey={this.props.history.location.pathname}
 					className="mr-auto"
 				>
-					<Nav.Link eventKey="/gallery">Gallery</Nav.Link>
-					<Nav.Link eventKey="/about">About</Nav.Link>
-					<Nav.Link href={`mailto:artneal@gmail.com`} target="_blank">Contact</Nav.Link>
+					<Nav.Link active eventKey="/gallery">Gallery</Nav.Link>
+					<Nav.Link active eventKey="/about">About</Nav.Link>
+					<Nav.Link active href={`mailto:artneal@gmail.com`} target="_blank">Contact</Nav.Link>
 				</Nav>
 			</Navbar>
 		);
