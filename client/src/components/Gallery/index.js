@@ -21,8 +21,8 @@ const GalleryModal = props => {
 				<Row className="justify-content-md-center">
 					<img
 						style={{
-							maxHeight: "80vh !important",
-							maxWidth: "100%"
+							maxHeight: "50vh !important",
+							maxWidth: "70%"
 						}}
 						src={props.image}
 						rel="preload"
@@ -77,29 +77,15 @@ const Gallery = () => {
 			<Container className="my-shuffle-container">
 				<Row>
 					<Col>
-						<div className="gallfilter text-center">
-							<ul className="list">
-								<li>
-									<Button className="galleryButtons" onClick={handleClickAll}>
-										All
-									</Button>
-
-									<Button className="galleryButtons" onClick={handleClickPortrait}>
-										Portrait
-									</Button>
-									<Button className="galleryButtons" onClick={handleClickAbstract}>
-										Abstract
-									</Button>
-									<Button className="galleryButtons" onClick={handleClickWater}>
-										Water
-									</Button>
-									<Button className="galleryButtons" onClick={handleClickLife}>
-										Life
-									</Button>
-									<Button className="galleryButtons" onClick={handleClickJazz}>
-										Jazz
-									</Button>
-								</li>
+						<div>
+							<ul className="list text-center">
+									
+									<Button className="galleryButtons" onClick={handleClickAll}>All</Button>
+									<Button className="galleryButtons" onClick={handleClickPortrait}>Portrait</Button>
+									<Button className="galleryButtons" onClick={handleClickAbstract}>Abstract</Button>
+									<Button className="galleryButtons" onClick={handleClickWater}>Water</Button>
+									<Button className="galleryButtons" onClick={handleClickLife}>Life</Button>
+									<Button className="galleryButtons" onClick={handleClickJazz}>Jazz</Button>
 							</ul>
 						</div>
 					</Col>

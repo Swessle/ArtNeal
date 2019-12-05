@@ -12,7 +12,11 @@ function GalleryCard(props) {
 					src={props.image}
 					rel="preload"
 				/>
+				<div class="midtransistion">
+    				<a href="#" class="text"><i class="fas fa-plus circle-icon"></i></a>
+  				</div>
 			</div>
+			
 
 	);
 }
