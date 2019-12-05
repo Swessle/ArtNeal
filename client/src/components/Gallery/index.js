@@ -62,23 +62,23 @@ const Gallery = () => {
 						<div className="gallfilter text-center">
 							<ul className="list">
 								<li>
-									<Button onClick={handleClickAll}>
+									<Button className="galleryButtons" onClick={handleClickAll}>
 										All
 									</Button>
 
-									<Button onClick={handleClickPortrait}>
+									<Button className="galleryButtons" onClick={handleClickPortrait}>
 										Portrait
 									</Button>
-									<Button onClick={handleClickAbstract}>
+									<Button className="galleryButtons" onClick={handleClickAbstract}>
 										Abstract
 									</Button>
-									<Button onClick={handleClickWater}>
+									<Button className="galleryButtons" onClick={handleClickWater}>
 										Water
 									</Button>
-									<Button onClick={handleClickLife}>
+									<Button className="galleryButtons" onClick={handleClickLife}>
 										Life
 									</Button>
-									<Button onClick={handleClickJazz}>
+									<Button className="galleryButtons" onClick={handleClickJazz}>
 										Jazz
 									</Button>
 								</li>

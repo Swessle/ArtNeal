@@ -23,6 +23,18 @@
 
 /* GALLERY */
 
+.galleryButtons {
+	color: black;
+	background-color: transparent;
+	border: none;
+	padding: 20px;
+	font-size: 20px;
+}
+.galleryButtons:hover {
+	color: black;
+	background-color: transparent;
+}
+
 .gallerytabs {
 	padding-top: 70px;
 }
