@@ -1,12 +1,6 @@
-.card {
-    background: #fff;
-    border-radius: 2px;
-    border: 5px solid white;
+  .card {
     padding:0;
-    
     margin: 8px;
-    
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     display: block;
   }
   
@@ -26,3 +20,38 @@
     max-height: 500;
     max-width: 700;
   }
+
+  .midtransistion {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .img-container:hover img {
+    filter: brightness(40%)
+  }
+  
+  .img-container:hover .midtransistion {
+    opacity: 1;
+  }
+
+  .fas {
+    color: white;
+    font-size: 40px;
+  }
+
+  .circle-icon {
+    background: #343638;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    vertical-align: middle;
+    padding: 15px;
+}

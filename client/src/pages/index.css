@@ -27,11 +27,14 @@
 	color: black;
 	background-color: transparent;
 	border: none;
-	padding: 20px;
-	font-size: 20px;
+	font-size: 18px;
+	letter-spacing: 3px;
+	
 }
+
 .galleryButtons:hover {
 	color: black;
+	text-decoration: underline;
 	background-color: transparent;
 }
 
@@ -45,21 +48,7 @@
 	margin-left: -5px;
 }
 
-.gallfilter li a.active {
-	border-bottom: 0.5px solid black;
-}
 
-.gallfilter ul li a {
-	color: black;
-	text-decoration: none;
-	margin-right: 15px;
-}
-
-a:hover {
-	text-decoration: none;
-	color: black;
-	transition: all 0.4s ease;
-}
 
 /* div.carousel-inner {
 	height: 94.25vh;
@@ -129,6 +118,9 @@ img {
 	padding: 1rem 0rem;
 }
 
+
+
+
 #footer {
 	position: fixed; 
     left: 0;
@@ -138,3 +130,4 @@ img {
   	color: white;
   	text-align: center;
 }
+
