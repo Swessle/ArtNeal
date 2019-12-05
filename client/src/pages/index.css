@@ -3,19 +3,34 @@
 	padding-top: 180px;
 }
 
-#nealImage {
+#aboutneal {
 	float: left;
-	margin: 25px;
-	width: 80vw;
-	max-width: 40vh;
-	height: auto;
-	border: 2px solid black;
-	box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.6);
+	margin: 15px;
+	height: 80px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	font-size: 90px;
 }
 
-#aboutText {
-	font-size: 22px;
+#nealimage {
+	width: 200px;
+	border-radius: 50%;
+	
+	height: auto;
 }
+
+#imgspacing {
+	padding-bottom: 10px;
+}
+
+
+#aboutText {
+	padding-top: 25px;
+	font-size: 22px;
+	letter-spacing: 2px;
+}
+
+
 
 .googleMap {
 	align-items: center;
@@ -47,6 +62,7 @@
 	list-style: none;
 	margin-left: -5px;
 }
+
 
 
 
