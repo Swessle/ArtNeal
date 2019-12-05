@@ -1,14 +1,10 @@
 import React from "react";
-import './style.css'
-
+import "./style.css";
+import {  Modal } from "react-bootstrap";
 
 function GalleryCard(props) {
-  return (
-		<div
-			id={props.id}
-			className="card col-xs-12 col-sm-6 col-md-3"
-			category={props.category}
-		>
+	return (
+
 			<div id={props.id} className="img-container">
 				<img
 					id={props.id}
@@ -17,8 +13,8 @@ function GalleryCard(props) {
 					rel="preload"
 				/>
 			</div>
-		</div>
-  );
+
+	);
 }
 
 export default GalleryCard;
