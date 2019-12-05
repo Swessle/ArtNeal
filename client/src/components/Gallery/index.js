@@ -20,7 +20,10 @@ const GalleryModal = props => {
 			<Modal.Body>
 				<Row className="justify-content-md-center">
 					<img
-						style={{ maxHeight: "80vh !important", maxWidth: "100%" }}
+						style={{
+							maxHeight: "80vh !important",
+							maxWidth: "100%"
+						}}
 						src={props.image}
 						rel="preload"
 					/>
