@@ -4,7 +4,7 @@ import "../../pages/index.css";
 
 const Footer = () => {
 	return (
-		<Container id="footer">
+		<Container fluid id="footer">
 			<Row>
 				<Col>
 					<p>TEST//TEST</p>
