@@ -5,6 +5,7 @@ import Navigation from "../components/Navbar";
 import Home from "../components/Home";
 import About from "../components/About";
 import Gallery from "../components/Gallery";
+import Footer from "../components/Footer";
 import { connect } from "react-redux";
 import { history } from "../store";
 import "./index.css";
@@ -56,6 +57,8 @@ class Pages extends Component {
 						<About />
 					</div>
 				</Collapse>
+
+				<Footer />
 			</div>
 		);
 	}
