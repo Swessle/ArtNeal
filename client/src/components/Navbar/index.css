@@ -3,4 +3,32 @@
     background-color: transparent;
 }
 
+a {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 4px;
+    
+    display: inline-block;
+    
+    position: relative;
+    
+}
+
+a:hover:after {
+    width:100%;
+    right: 0;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 5px;
+    content: "";
+    display: block;
+    height: 2px;
+    right: 0;
+    position: absolute;
+    background: white;
+    transition: width 1s ease 0s, right 0.5s ease 0s;
+    width: 0;
+}
 
