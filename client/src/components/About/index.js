@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../../pages/index.css";
-import Image from "../../pages/assets/images/Neal.jpg";
+import Image from "../../pages/assets/images/Neal.JPG";
 
 import GoogleMap from "../GoogleMap";
 
@@ -35,8 +35,8 @@ const About = () => {
 			</Row>
 			<Row className="pt-5 pb-5">
 				<Col className="text-center">
-					<h1>Location</h1>
-					<GoogleMap />
+					{/* <h1>Location</h1>
+					<GoogleMap /> */}
 				</Col>
 			</Row>
 		</Container>
