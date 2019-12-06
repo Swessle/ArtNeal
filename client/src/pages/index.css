@@ -1,6 +1,7 @@
 /* ABOUT ME */
 #aboutContainer {
 	padding-top: 180px;
+	height: 100vh;
 }
 
 #aboutneal {
@@ -15,7 +16,7 @@
 #nealimage {
 	width: 200px;
 	border-radius: 50%;
-	
+
 	height: auto;
 }
 
@@ -23,14 +24,11 @@
 	padding-bottom: 10px;
 }
 
-
 #aboutText {
 	padding-top: 25px;
 	font-size: 22px;
 	letter-spacing: 2px;
 }
-
-
 
 .googleMap {
 	align-items: center;
@@ -44,7 +42,6 @@
 	border: none;
 	font-size: 18px;
 	letter-spacing: 3px;
-	
 }
 
 .galleryButtons:hover {
@@ -62,9 +59,6 @@
 	list-style: none;
 	margin-left: -5px;
 }
-
-
-
 
 /* div.carousel-inner {
 	height: 94.25vh;
@@ -141,12 +135,11 @@ img {
 
 #footer {
 	position: relative; 
-    left: 0;
-  	bottom: 0;
-	  width: 100%;
-	  text-align: center;
-  	background-color: #D3D3D3;
-  	color: black;
+  left: 0;
+  bottom: 0;
+	width: 100%;
+	text-align: center;
+  background-color: #D3D3D3;
+  color: black;
 	padding-top: 30px;
 }
-
