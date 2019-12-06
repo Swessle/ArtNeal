@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Image, Button, Modal } from "react-bootstrap";
+import {
+	Container,
+	Row,
+	Col,
+	Image,
+	Button,
+	Modal,
+	Fade,
+	Collapse
+} from "react-bootstrap";
 
 import GalleryCard from "../GalleryCard";
 import galleryPics from "../../Gallery.json";
@@ -38,6 +47,8 @@ const Gallery = () => {
 	const [filteredPics, setfilteredPics] = useState(null);
 	const [modalShow, setModalShow] = useState(false);
 	const [currentPic, setCurrentPic] = useState({ image: "", title: "" });
+	const [fade, setFade] = useState(false);
+	const [collapse, setCollapse] = useState(true);
 
 	var jazz = pics.filter(e => e.category === "Jazz");
 	var portrait = pics.filter(e => e.category === "Portrait");
@@ -47,29 +58,55 @@ const Gallery = () => {
 
 	useEffect(() => {
 		setfilteredPics(pics);
+		setTimeout(() => {
+			setFade(true);
+		}, 500);
 	}, []);
 
 	const handleClickAll = () => {
-		setfilteredPics(pics);
+		setFade(false);
+		setTimeout(() => {
+			setfilteredPics(pics);
+			setFade(true);
+		}, 500);
 	};
 	const handleClickJazz = () => {
-		setfilteredPics(jazz);
-		console.log(jazz);
+		setFade(false);
+		setTimeout(() => {
+			setfilteredPics(jazz);
+			setFade(true);
+		}, 500);
 	};
 	const handleClickAbstract = () => {
-		setfilteredPics(abstract);
+		setFade(false);
+		setTimeout(() => {
+			setfilteredPics(abstract);
+			setFade(true);
+		}, 500);
 	};
 
 	const handleClickWater = () => {
-		setfilteredPics(water);
+		setFade(false);
+		setTimeout(() => {
+			setfilteredPics(water);
+			setFade(true);
+		}, 500);
 	};
 
 	const handleClickLife = () => {
-		setfilteredPics(life);
+		setFade(false);
+		setTimeout(() => {
+			setfilteredPics(life);
+			setFade(true);
+		}, 500);
 	};
 
 	const handleClickPortrait = () => {
-		setfilteredPics(portrait);
+		setFade(false);
+		setTimeout(() => {
+			setfilteredPics(portrait);
+			setFade(true);
+		}, 500);
 	};
 
 	return (
@@ -79,42 +116,73 @@ const Gallery = () => {
 					<Col>
 						<div>
 							<ul className="list text-center">
-									
-									<Button className="galleryButtons" onClick={handleClickAll}>All</Button>
-									<Button className="galleryButtons" onClick={handleClickPortrait}>Portrait</Button>
-									<Button className="galleryButtons" onClick={handleClickAbstract}>Abstract</Button>
-									<Button className="galleryButtons" onClick={handleClickWater}>Water</Button>
-									<Button className="galleryButtons" onClick={handleClickLife}>Life</Button>
-									<Button className="galleryButtons" onClick={handleClickJazz}>Jazz</Button>
+								<Button
+									className="galleryButtons"
+									onClick={handleClickAll}
+								>
+									All
+								</Button>
+								<Button
+									className="galleryButtons"
+									onClick={handleClickPortrait}
+								>
+									Portrait
+								</Button>
+								<Button
+									className="galleryButtons"
+									onClick={handleClickAbstract}
+								>
+									Abstract
+								</Button>
+								<Button
+									className="galleryButtons"
+									onClick={handleClickWater}
+								>
+									Water
+								</Button>
+								<Button
+									className="galleryButtons"
+									onClick={handleClickLife}
+								>
+									Life
+								</Button>
+								<Button
+									className="galleryButtons"
+									onClick={handleClickJazz}
+								>
+									Jazz
+								</Button>
 							</ul>
 						</div>
 					</Col>
 				</Row>
-				<Row className="shufflePics justify-content-md-center">
-					{filteredPics &&
-						filteredPics.map(pic => (
-							<>
-								<div
-									id={pic.id}
-									className="card col-xs-12 col-sm-6 col-md-3"
-									category={pic.category}
-									onClick={() => {
-										setModalShow(true);
-										setCurrentPic({
-											image: pic.image,
-											title: pic.name
-										});
-									}}
-								>
-									<GalleryCard
-										key={pic.id}
-										image={pic.image}
+				<Fade in={fade}>
+					<Row className="shufflePics justify-content-md-center">
+						{filteredPics &&
+							filteredPics.map(pic => (
+								<>
+									<div
+										id={pic.id}
+										className="card col-xs-12 col-sm-6 col-md-3"
 										category={pic.category}
-									/>
-								</div>
-							</>
-						))}
-				</Row>
+										onClick={() => {
+											setModalShow(true);
+											setCurrentPic({
+												image: pic.image,
+												title: pic.name
+											});
+										}}
+									>
+										<GalleryCard
+											key={pic.id}
+											image={pic.image}
+											category={pic.category}
+										/>
+									</div>
+								</>
+							))}
+					</Row>
+				</Fade>
 				<GalleryModal
 					show={modalShow}
 					onHide={() => setModalShow(false)}
