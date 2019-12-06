@@ -40,7 +40,7 @@ class Navigation extends Component {
 				>
 					<Nav.Link className="underline" active eventKey="/gallery">Gallery</Nav.Link>
 					<Nav.Link active eventKey="/about">About</Nav.Link>
-					<Nav.Link active href={`mailto:artneal@gmail.com`} target="_blank">Contact</Nav.Link>
+					<Nav.Link active href={`mailto:neabo59@gmail.com`} target="_blank">Contact</Nav.Link>
 				</Nav>
 			</Navbar>
 		);
