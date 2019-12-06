@@ -60,6 +60,10 @@
 	margin-left: -5px;
 }
 
+.text {
+	cursor: pointer;
+}
+
 /* div.carousel-inner {
 	height: 94.25vh;
 } */
@@ -77,6 +81,18 @@ img.d-block {
 
 img {
 	pointer-events: none;
+}
+
+.darkNav div div nav div a {
+	color: black !important;
+}
+
+.darkNav div div nav div a:hover {
+	color: black !important;
+}
+
+.darkNav div div nav div a:after {
+	background: black !important;
 }
 
 .navbar {
