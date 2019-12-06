@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../../pages/index.css";
-import Image from "../../pages/assets/images/Neal.jpg";
+import Image from "../../pages/assets/images/Neal.JPG";
 
 import GoogleMap from "../GoogleMap";
 
