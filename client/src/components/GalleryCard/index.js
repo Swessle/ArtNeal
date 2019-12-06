@@ -4,7 +4,8 @@ import { Modal } from "react-bootstrap";
 
 function GalleryCard(props) {
 	return (
-		<div id={props.id} className="img-container">
+    
+    <div id={props.id} className="img-container">
 			<img
 				id={props.id}
 				alt={props.name}
@@ -13,8 +14,9 @@ function GalleryCard(props) {
 			/>
 			<div class="midtransistion">
 				<a href="#" class="text">
-					<i class="fas fa-plus circle-icon" />
+					<i class="fas fa-expand-arrows-alt circle-icon" />
 				</a>
+
 			</div>
 		</div>
 	);
