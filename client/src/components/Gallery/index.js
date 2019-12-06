@@ -156,7 +156,7 @@ const Gallery = () => {
 						</div>
 					</Col>
 				</Row>
-				<Fade in={fade}>
+				<Fade in={fade} appear={true}>
 					<Row className="shufflePics justify-content-md-center">
 						{filteredPics &&
 							filteredPics.map(pic => (
