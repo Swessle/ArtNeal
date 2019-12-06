@@ -134,13 +134,19 @@ img {
 	padding: 1rem 0rem;
 }
 
+
+#spacing {
+	padding-top: 50px;
+}
+
 #footer {
 	position: relative; 
     left: 0;
   	bottom: 0;
-  	width: 100%;
-  	background-color: red;
-  	color: white;
-  	text-align: center;
+	  width: 100%;
+	  text-align: center;
+  	background-color: #D3D3D3;
+  	color: black;
+	padding-top: 30px;
 }
 

@@ -4,13 +4,13 @@ import "../../pages/index.css";
 
 const Footer = () => {
 	return (
-		<Container fluid id="footer">
-			<Row>
-				<Col>
-					<p>TEST//TEST</p>
-				</Col>
-			</Row>
-		</Container>
+			<Container fluid id="footer">
+				<Row>
+					<Col>
+						<p>©️ 2019 Neal Lange</p>
+					</Col>
+				</Row>
+			</Container>
 	);
 };
 
