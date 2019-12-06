@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import { Modal } from "react-bootstrap";
 
 function GalleryCard(props) {
 	return (
