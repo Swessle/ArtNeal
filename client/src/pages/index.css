@@ -7,7 +7,7 @@
 #aboutneal {
 	float: left;
 	margin: 15px;
-	height: 80px;
+	height: 65px;
 	font-weight: 700;
 	letter-spacing: 5px;
 	font-size: 90px;
@@ -25,7 +25,7 @@
 }
 
 #aboutText {
-	padding-top: 25px;
+	padding-top: 27px;
 	font-size: 22px;
 	letter-spacing: 2px;
 }
@@ -34,6 +34,31 @@
 	align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+	#aboutneal {
+	  
+	  margin: 5px;
+	  height: 40px;
+	  font-size: 50px;
+	}
+	#aboutText {
+		padding-top: 8px;
+		font-size: 20px;
+	}
+  }
+
+@media only screen and (max-width: 406px) {
+	#aboutneal {
+		
+		margin: 5px;
+		height: 40px;
+		font-size: 35px;
+	  }
+	  #aboutText {
+		  padding-top: 8px;
+		  font-size: 15px;
+	  }
+}
 /* GALLERY */
 
 .galleryButtons {
