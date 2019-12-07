@@ -67,6 +67,8 @@ const Gallery = () => {
 		setFade(false);
 		setTimeout(() => {
 			setfilteredPics(pics);
+		}, 150);
+		setTimeout(() => {
 			setFade(true);
 		}, 500);
 	};
@@ -74,6 +76,8 @@ const Gallery = () => {
 		setFade(false);
 		setTimeout(() => {
 			setfilteredPics(jazz);
+		}, 150);
+		setTimeout(() => {
 			setFade(true);
 		}, 500);
 	};
@@ -81,6 +85,8 @@ const Gallery = () => {
 		setFade(false);
 		setTimeout(() => {
 			setfilteredPics(abstract);
+		}, 150);
+		setTimeout(() => {
 			setFade(true);
 		}, 500);
 	};
@@ -89,6 +95,8 @@ const Gallery = () => {
 		setFade(false);
 		setTimeout(() => {
 			setfilteredPics(water);
+		}, 150);
+		setTimeout(() => {
 			setFade(true);
 		}, 500);
 	};
@@ -97,6 +105,8 @@ const Gallery = () => {
 		setFade(false);
 		setTimeout(() => {
 			setfilteredPics(life);
+		}, 150);
+		setTimeout(() => {
 			setFade(true);
 		}, 500);
 	};
@@ -105,6 +115,8 @@ const Gallery = () => {
 		setFade(false);
 		setTimeout(() => {
 			setfilteredPics(portrait);
+		}, 150);
+		setTimeout(() => {
 			setFade(true);
 		}, 500);
 	};
@@ -165,19 +177,32 @@ const Gallery = () => {
 										id={pic.id}
 										className="card col-xs-12 col-sm-6 col-md-3"
 										category={pic.category}
-										onClick={() => {
-											setModalShow(true);
-											setCurrentPic({
-												image: pic.image,
-												title: pic.name
-											});
-										}}
 									>
-										<GalleryCard
-											key={pic.id}
-											image={pic.image}
-											category={pic.category}
-										/>
+										<div
+											id={pic.id}
+											className="img-container"
+										>
+											<img
+												id={pic.id}
+												alt={pic.name}
+												src={pic.image}
+												rel="preload"
+											/>
+											<div class="midtransistion">
+												<a
+													class="text"
+													onClick={() => {
+														setModalShow(true);
+														setCurrentPic({
+															image: pic.image,
+															title: pic.name
+														});
+													}}
+												>
+													<i class="fas fa-expand-arrows-alt circle-icon" />
+												</a>
+											</div>
+										</div>
 									</div>
 								</>
 							))}

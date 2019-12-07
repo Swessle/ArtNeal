@@ -11,6 +11,16 @@ import { history } from "../store";
 import "./index.css";
 
 class Pages extends Component {
+	componentDidMount() {
+		if (this.props.location.pathname !== "/") {
+			document.body.classList.add("darkNav");
+		}
+	}
+	componentDidUpdate() {
+		if (this.props.location.pathname !== "/") {
+			document.body.classList.add("darkNav");
+		}
+	}
 	render() {
 		return (
 			<div>
