@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../../pages/index.css";
-import Image from "../../pages/assets/images/Neal.JPG";
+import Image from "../../pages/assets/images/Neal.jpg";
 
 import GoogleMap from "../GoogleMap";
 
@@ -30,7 +30,7 @@ const About = () => {
 			</Row>
 			<Row>
 				<Col>
-					<i class="fas fa-envelope" style={{color: "black", fontSize: "25px", verticalAlign: "middle", paddingRight: "5px"}}></i> <a href="#">skadit@gmail.com</a> 
+					<i class="fas fa-envelope" style={{color: "black", fontSize: "25px", verticalAlign: "middle", paddingRight: "5px"}}></i> <a href={`mailto:neabo59@gmail.com`} target="_blank">neabo59@gmail.com</a> 
 				</Col>	
 			</Row>
 			<Row className="pt-5 pb-5">

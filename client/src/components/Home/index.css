@@ -38,3 +38,114 @@
     left: 25%;
     bottom: 100px;
 }
+
+@media only screen and (max-width: 1574px) {
+	#textcaption {
+        left: -45%;
+    }
+}
+
+@media only screen and (max-width: 1331px) {
+	#textcaption {
+        left: -40%;
+    }
+    #btncaption {
+        left: 32%;
+    }
+}
+
+@media only screen and (max-width: 1172px) {
+	#textcaption {
+        left: -35%;
+    }
+    #btncaption {
+        left: 32%;
+    }
+}
+
+@media only screen and (max-width: 1028px) {
+	#textcaption {
+        left: -28%;
+    }
+    #btncaption {
+        left: 37%;
+    }
+}
+
+@media only screen and (max-width: 931px) {
+	#textcaption {
+        left: -20%;
+    }
+    #btncaption {
+        left: 42%;
+    }
+}
+
+@media only screen and (max-width: 822px) {
+	#textcaption {
+        left: -15%;
+    }
+    #btncaption {
+        left: 45%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+	#textcaption {
+        left: -15%;
+    }
+    #btncaption {
+        left: 45%;
+    }
+    #landingbtn {
+        height: 40px;
+        width: 170px;
+        font-size: 15px;
+    }
+    #landingtext {
+        font-size: 65px;
+    }
+}
+
+@media only screen and (max-width: 572px) {
+	#textcaption {
+        left: -10%;
+    }
+    #btncaption {
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+	#textcaption {
+        left: 0%;
+    }
+    #btncaption {
+        left: 55%;
+    }
+    #landingbtn {
+        height: 35px;
+        width: 145px;
+        font-size: 12px;
+    }
+    #landingtext {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+	#textcaption {
+        left: 0%;
+    }
+    #btncaption {
+        left: 55%;
+    }
+    #landingbtn {
+        height: 20px;
+        width: 125px;
+        font-size: 10px;
+    }
+    #landingtext {
+        font-size: 35px;
+    }
+}
