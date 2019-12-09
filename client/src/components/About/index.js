@@ -30,7 +30,7 @@ const About = () => {
 			</Row>
 			<Row>
 				<Col>
-					<i class="fas fa-envelope" style={{color: "black", fontSize: "25px", verticalAlign: "middle", paddingRight: "5px"}}></i> <a href={`mailto:neabo59@gmail.com`} target="_blank">neabo59@gmail.com</a> 
+					<i class="fas fa-envelope" style={{color: "black", fontSize: "25px", verticalAlign: "middle", paddingRight: "5px"}}></i> <a href={`mailto:neal@artneal.com`} target="_blank">neal@artneal.com</a> 
 				</Col>	
 			</Row>
 			<Row className="pt-5 pb-5">
